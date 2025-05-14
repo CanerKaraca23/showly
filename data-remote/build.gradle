@@ -27,7 +27,6 @@ android {
   }
 
   buildTypes.all {
-    Properties properties = new Properties()
 
     buildConfigField("String", "TRAKT_CLIENT_ID", properties.getProperty("traktClientId"))
     buildConfigField("String", "TRAKT_CLIENT_SECRET", properties.getProperty("traktClientSecret"))
